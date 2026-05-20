@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 88" width="88" height="88">
+  <rect width="88" height="88" fill="#b0b0b0"/>
+  <circle cx="44" cy="34" r="16" fill="#e0e0e0"/>
+  <ellipse cx="44" cy="72" rx="26" ry="18" fill="#e0e0e0"/>
+  <text x="44" y="48" text-anchor="middle" font-size="12" fill="#888" font-family="sans-serif" font-weight="bold">CP</text>
+</svg>

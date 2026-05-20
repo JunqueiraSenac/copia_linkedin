@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor Hugo e João Otavio">
+  <title>Jhon doe | LinkedIn</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Ícones via SVG embutidos, sem dependências externas -->
+</head>
+<body>
+
+  <!-- ===================== CABEÇALHO DE NAVEGAÇÃO ===================== -->
+  <header class="cabecalho-navegacao">
+    <div class="cabecalho-interno">
+
+      <!-- Logo LinkedIn -->
+      <div class="cabecalho-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" class="logo-svg">
+          <title>LinkedIn</title>
+          <path d="M34 2.5v29A2.5 2.5 0 0131.5 34H2.5A2.5 2.5 0 010 31.5V2.5A2.5 2.5 0 012.5 0h29A2.5 2.5 0 0134 2.5zM10 13H5v16h5V13zm.45-5.5a2.95 2.95 0 10-5.9 0 2.95 2.95 0 005.9 0zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 00-4.83 2.38H18v-2H13v16h5v-8.57a3.3 3.3 0 013.22-3.48c1.64 0 2.78 1 2.78 3.43V29h5z" fill="#0a66c2"/>
+        </svg>
+      </div>
+
+      <!-- Busca -->
+      <div class="cabecalho-busca">
+        <div class="campo-busca">
+          <svg class="icone-busca" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666">
+            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+          <input type="text" class="entrada-busca" placeholder="Buscar" />
+        </div>
+      </div>
+
+      <!-- Navegação principal -->
+      <nav class="cabecalho-nav-principal">
+
+        <a href="#" class="item-nav ativo">
+          <div class="icone-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M23 9.01v12.5a1.5 1.5 0 01-1.5 1.5h-5a1.5 1.5 0 01-1.5-1.5v-5h-6v5a1.5 1.5 0 01-1.5 1.5h-5A1.5 1.5 0 011 21.51V9.01l11-7 11 7z"/>
+            </svg>
+          </div>
+          <span class="rotulo-nav">Início</span>
+        </a>
+
+        <a href="#" class="item-nav">
+          <div class="icone-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M12 2C9.24 2 7 4.24 7 7s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 10c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/>
+            </svg>
+          </div>
+          <span class="rotulo-nav">Minha rede</span>
+        </a>
+
+        <a href="#" class="item-nav">
+          <div class="icone-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M20 6h-2V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2H4a2 2 0 00-2 2v11a3 3 0 003 3h14a3 3 0 003-3V8a2 2 0 00-2-2zM8 4h8v2H8V4zm12 15a1 1 0 01-1 1H5a1 1 0 01-1-1V8h16v11z"/>
+            </svg>
+          </div>
+          <span class="rotulo-nav">Vagas</span>
+        </a>
+
+        <a href="#" class="item-nav">
+          <div class="icone-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/>
+            </svg>
+          </div>
+          <span class="rotulo-nav">Mensagens</span>
+        </a>
+
+        <a href="#" class="item-nav">
+          <div class="icone-nav icone-notificacao">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M12 22a2 2 0 002-2h-4a2 2 0 002 2zm6-6V11a6 6 0 10-12 0v5l-2 2v1h16v-1l-2-2z"/>
+            </svg>
+            <span class="contador-notificacoes">3</span>
+          </div>
+          <span class="rotulo-nav">Notificações</span>
+        </a>
+
+        <!-- Avatar do usuário nav -->
+        <div class="item-nav item-nav-perfil">
+          <div class="avatar-nav">
+            <img src="img/perfil.jpg" alt="Eu" class="imagem-avatar-nav" />
+          </div>
+          <span class="rotulo-nav">Eu ▾</span>
+        </div>
+
+        <div class="separador-nav"></div>
+
+        <a href="#" class="item-nav">
+          <div class="icone-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M3 3h4v4H3V3zm7 4h4V3h-4v4zm7-4v4h4V3h-4zM3 14h4v-4H3v4zm7 0h4v-4h-4v4zm7 0h4v-4h-4v4zM3 21h4v-4H3v4zm7 0h4v-4h-4v4zm7 0h4v-4h-4v4z"/>
+            </svg>
+          </div>
+          <span class="rotulo-nav">Para negócios ▾</span>
+        </a>
+
+        <a href="#" class="botao-premium-nav">Experimente o Premium</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main class="conteudo-principal">
+    <div class="grade-perfil">
+
+      <!-- ===== COLUNA ESQUERDA ===== -->
+      <aside class="coluna-esquerda">
+
+        <!-- CARD: DADOS PESSOAIS / CAPA E FOTO -->
+        <section class="card card-dados-pessoais">
+
+          <!-- Imagem de capa -->
+          <div class="area-capa">
+            <img src="capa.svg" alt="Capa do perfil" class="imagem-capa" />
+          </div>
+
+          <!-- Foto de perfil (z-index para sobrepor a capa) -->
+          <div class="area-foto-perfil">
+            <div class="moldura-foto">
+              <img src="img/perfil.jpg" alt="Foto de Carlos Pelegrin" class="foto-perfil" />
+            </div>
+            <button class="botao-adicionar-foto" title="Adicionar foto">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0a66c2" width="20" height="20">
+                <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Botões de edição (canto superior direito) -->
+          <div class="acoes-card-topo">
+            <button class="botao-icone" title="Editar perfil">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 000-1.41l-2.34-2.34a1 1 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Informações pessoais -->
+          <div class="informacoes-pessoais">
+            <h1 class="nome-completo">Jhon doe</h1>
+            <p class="titulo-profissional">Professor Universitário &amp; Instrutor Técnico · Desenvolvedor Flutter</p>
+
+            <p class="localizacao">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="16" height="16">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+              </svg>
+              Umuarama, Paraná, Brasil
+            </p>
+
+            <p class="instituicao-atual">
+              Professor na <strong>Unipar</strong> e <strong>Senac</strong> · Umuarama – PR
+            </p>
+
+            <p class="formacao-resumida">Mestre em Ciência da Computação</p>
+
+            <!-- Links de conexão -->
+            <div class="area-conexoes">
+              <span class="contador-conexoes">
+                <a href="#" class="link-conexoes">500 conexões</a>
+              </span>
+            </div>
+
+            <!-- Botões de ação do perfil -->
+            <div class="botoes-acao-perfil">
+              <button class="botao-primario">Aberto para</button>
+              <button class="botao-secundario">Adicionar seção ao perfil</button>
+              <button class="botao-terciario">Mais</button>
+            </div>
+
+            <!-- Badge Premium / disponível para -->
+            <div class="area-disponivel">
+              <div class="badge-disponivel">
+                <span class="texto-badge">Disponível para trabalho</span>
+                <a href="#" class="link-badge">Ver todas as informações</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CARD: ANÁLISES DO PERFIL -->
+        <section class="card card-analiticas">
+          <div class="cabecalho-card">
+            <h2 class="titulo-card">Análises <span class="badge-privado">Privado para você</span></h2>
+          </div>
+          <ul class="lista-analiticas">
+            <li class="item-analitica">
+              <div class="icone-analitica">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                  <path d="M12 4.5a2 2 0 100 4 2 2 0 000-4zM6 4.5a2 2 0 100 4 2 2 0 000-4zM18 4.5a2 2 0 100 4 2 2 0 000-4zM12 13.5a2 2 0 100 4 2 2 0 000-4zM6 13.5a2 2 0 100 4 2 2 0 000-4zM18 13.5a2 2 0 100 4 2 2 0 000-4z"/>
+                </svg>
+              </div>
+              <div class="texto-analitica">
+                <strong>48</strong> visualizações do perfil nos últimos 7 dias
+              </div>
+            </li>
+            <li class="item-analitica">
+              <div class="icone-analitica">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                  <path d="M3.5 18.5l6-6 4 4 7-9.5"/>
+                </svg>
+              </div>
+              <div class="texto-analitica">
+                <strong>12</strong> aparições em pesquisas nos últimos 7 dias
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </aside>
+
+      <!-- ===== COLUNA CENTRAL ===== -->
+      <div class="coluna-central">
+
+        <!-- CARD: SOBRE -->
+        <section class="card card-sobre" id="sobre">
+          <div class="cabecalho-card">
+            <h2 class="titulo-card">Sobre</h2>
+            <button class="botao-icone botao-editar-secao" title="Editar seção Sobre">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 000-1.41l-2.34-2.34a1 1 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="conteudo-sobre">
+            <p class="texto-sobre">
+              Atualmente entusiasta de Flutter, desenvolvendo como freelancer aplicativo para contabilidade digital
+              utilizando esta tecnologia. Possuo experiências profissionais em desenvolvimento desde 2012.
+            </p>
+            <p class="texto-sobre">
+              Ao longo dessa trajetória, minha carreira proporcionou experiências em desenvolvimento de aplicativos
+              para tablets e smartphones que integram com equipamentos para Smart Cities e definição de normas e
+              arquitetura de sistemas web com arquitetura SOA na empresa Smartgreen; desenvolvimento de aplicativo
+              de testes para tablets com sistema operacional Android e prestando suporte à produção, tanto de hardware
+              quanto montagem do produto, na empresa Positivo Informática; desenvolvimento de software em ambiente
+              web e mobile para empresa de gestão empresarial.
+            </p>
+            <p class="texto-sobre">
+              Professor Universitário no curso de Sistemas de Informação, modalidades presencial e EAD na Unipar, e
+              Professor em cursos Técnicos e ensino médio no Senac, principalmente ministrando disciplinas
+              relacionadas a programação, web e mobile.
+            </p>
+          </div>
+        </section>
+
+        <!-- CARD: EXPERIÊNCIAS PROFISSIONAIS -->
+        <section class="card card-experiencias" id="experiencias">
+          <div class="cabecalho-card">
+            <h2 class="titulo-card">Experiência</h2>
+            <div class="acoes-secao">
+              <button class="botao-icone" title="Adicionar experiência">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                  <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                </svg>
+              </button>
+              <button class="botao-icone" title="Editar experiências">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                  <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 000-1.41l-2.34-2.34a1 1 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <ul class="lista-experiencias">
+
+            <!-- Experiência 1 -->
+            <li class="item-experiencia">
+              <div class="logo-empresa">
+                <div class="placeholder-logo placeholder-unipar">U</div>
+              </div>
+              <div class="detalhes-experiencia">
+                <h3 class="cargo">Professor Universitário</h3>
+                <p class="empresa">Unipar – Universidade Paranaense</p>
+                <p class="periodo-emprego">
+                  <span class="datas-emprego">ago de 2018 – o momento</span>
+                  <span class="duracao-emprego"> · 6 anos 9 meses</span>
+                </p>
+                <p class="local-emprego">Umuarama, Paraná, Brasil · Presencial</p>
+                <p class="descricao-experiencia">
+                  Professor no curso de Sistemas de Informação nas modalidades presencial e EAD,
+                  ministrando disciplinas relacionadas a programação, desenvolvimento web e mobile,
+                  estruturas de dados e engenharia de software.
+                </p>
+              </div>
+            </li>
+
+            <!-- Experiência 2 -->
+            <li class="item-experiencia">
+              <div class="logo-empresa">
+                <div class="placeholder-logo placeholder-senac">S</div>
+              </div>
+              <div class="detalhes-experiencia">
+                <h3 class="cargo">Instrutor</h3>
+                <p class="empresa">Senac PR</p>
+                <p class="periodo-emprego">
+                  <span class="datas-emprego">mar de 2019 – o momento</span>
+                  <span class="duracao-emprego"> · 6 anos 2 meses</span>
+                </p>
+                <p class="local-emprego">Umuarama, Paraná, Brasil · Presencial</p>
+                <p class="descricao-experiencia">
+                  Instrutor em cursos Técnicos e Ensino Médio, ministrando disciplinas relacionadas
+                  a programação, web e mobile. Ensino de HTML, CSS, JavaScript, PHP, banco de dados
+                  e desenvolvimento de aplicações Android.
+                </p>
+              </div>
+            </li>
+
+            <!-- Experiência 3 -->
+            <li class="item-experiencia">
+              <div class="logo-empresa">
+                <div class="placeholder-logo placeholder-smartgreen">SG</div>
+              </div>
+              <div class="detalhes-experiencia">
+                <h3 class="cargo">Desenvolvedor de Software</h3>
+                <p class="empresa">Smartgreen</p>
+                <p class="periodo-emprego">
+                  <span class="datas-emprego">jan de 2015 – jul de 2018</span>
+                  <span class="duracao-emprego"> · 3 anos 7 meses</span>
+                </p>
+                <p class="local-emprego">Curitiba, Paraná, Brasil</p>
+                <p class="descricao-experiencia">
+                  Desenvolvimento de aplicativos para tablets e smartphones integrando com equipamentos
+                  para Smart Cities. Definição de normas e arquitetura de sistemas web com arquitetura SOA.
+                  Desenvolvimento mobile para Android e iOS com integração a plataformas IoT.
+                </p>
+              </div>
+            </li>
+
+            <!-- Experiência 4 -->
+            <li class="item-experiencia">
+              <div class="logo-empresa">
+                <div class="placeholder-logo placeholder-positivo">P</div>
+              </div>
+              <div class="detalhes-experiencia">
+                <h3 class="cargo">Desenvolvedor Android</h3>
+                <p class="empresa">Positivo Informática</p>
+                <p class="periodo-emprego">
+                  <span class="datas-emprego">mar de 2012 – dez de 2014</span>
+                  <span class="duracao-emprego"> · 2 anos 10 meses</span>
+                </p>
+                <p class="local-emprego">Curitiba, Paraná, Brasil</p>
+                <p class="descricao-experiencia">
+                  Desenvolvimento de aplicativo de testes para tablets com sistema operacional Android.
+                  Prestação de suporte à produção, tanto de hardware quanto montagem do produto final.
+                  Análise e resolução de bugs em dispositivos Android da linha Positivo.
+                </p>
+              </div>
+            </li>
+
+            <!-- Experiência 5 -->
+            <li class="item-experiencia">
+              <div class="logo-empresa">
+                <div class="placeholder-logo placeholder-freelancer">FL</div>
+              </div>
+              <div class="detalhes-experiencia">
+                <h3 class="cargo">Desenvolvedor Flutter – Freelancer</h3>
+                <p class="empresa">Autônomo</p>
+                <p class="periodo-emprego">
+                  <span class="datas-emprego">2020 – o momento</span>
+                  <span class="duracao-emprego"> · 5 anos</span>
+                </p>
+                <p class="local-emprego">Remoto</p>
+                <p class="descricao-experiencia">
+                  Desenvolvimento de aplicativo para contabilidade digital utilizando Flutter.
+                  Aprendizagem contínua de Kotlin e Swift para desenvolvimento multiplataforma
+                  nativo. Gerenciamento de projeto open source para gestão de ONGs (SAAU).
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+        <!-- CARD: FORMAÇÃO ACADÊMICA -->
+        <section class="card card-formacao" id="formacao">
+          <div class="cabecalho-card">
+            <h2 class="titulo-card">Formação acadêmica</h2>
+            <div class="acoes-secao">
+              <button class="botao-icone" title="Adicionar formação">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                  <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                </svg>
+              </button>
+              <button class="botao-icone" title="Editar formação">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="20" height="20">
+                  <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 000-1.41l-2.34-2.34a1 1 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <ul class="lista-formacoes">
+
+            <!-- Formação 1: Mestrado -->
+            <li class="item-formacao">
+              <div class="logo-instituicao">
+                <div class="placeholder-logo placeholder-uem">UEM</div>
+              </div>
+              <div class="detalhes-formacao">
+                <h3 class="instituicao">Universidade Estadual de Maringá (UEM)</h3>
+                <p class="grau-area">Mestrado · Ciência da Computação</p>
+                <p class="periodo-formacao">2016 – 2018</p>
+                <p class="descricao-formacao">
+                  Pesquisa voltada ao desenvolvimento de sistemas mobile e integração com dispositivos
+                  IoT para aplicações em Smart Cities.
+                </p>
+              </div>
+            </li>
+
+            <!-- Formação 2: Graduação -->
+            <li class="item-formacao">
+              <div class="logo-instituicao">
+                <div class="placeholder-logo placeholder-unipar2">UNP</div>
+              </div>
+              <div class="detalhes-formacao">
+                <h3 class="instituicao">Unipar – Universidade Paranaense</h3>
+                <p class="grau-area">Bacharelado · Sistemas de Informação</p>
+                <p class="periodo-formacao">2008 – 2012</p>
+                <p class="descricao-formacao">
+                  Formação em desenvolvimento de sistemas, banco de dados, redes e engenharia de software.
+                  Projeto de conclusão de curso na área de desenvolvimento mobile.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </div><!-- fim coluna-central -->
+
+      <!-- ===== COLUNA DIREITA ===== -->
+      <aside class="coluna-direita">
+
+        <!-- Card de perfis semelhantes -->
+        <section class="card card-sugestoes">
+          <h2 class="titulo-card titulo-card-sugestoes">Pessoas que você pode conhecer</h2>
+          <ul class="lista-sugestoes">
+            <li class="item-sugestao">
+              <div class="avatar-sugestao">
+                <div class="placeholder-avatar-sugestao">MA</div>
+              </div>
+              <div class="info-sugestao">
+                <p class="nome-sugestao">Maria Aparecida</p>
+                <p class="cargo-sugestao">Professora de TI · Senac</p>
+                <button class="botao-conectar">Conectar</button>
+              </div>
+            </li>
+            <li class="item-sugestao">
+              <div class="avatar-sugestao">
+                <div class="placeholder-avatar-sugestao">JS</div>
+              </div>
+              <div class="info-sugestao">
+                <p class="nome-sugestao">João da Silva</p>
+                <p class="cargo-sugestao">Dev Flutter · Freelancer</p>
+                <button class="botao-conectar">Conectar</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Card de rodapé (links LinkedIn) -->
+        <section class="card card-rodape-links">
+          <nav class="nav-rodape">
+            <a href="#" class="link-rodape">Sobre</a>
+            <a href="#" class="link-rodape">Acessibilidade</a>
+            <a href="#" class="link-rodape">Central de ajuda</a>
+            <a href="#" class="link-rodape">Privacidade e condições</a>
+            <a href="#" class="link-rodape">Opções de anúncio</a>
+            <a href="#" class="link-rodape">Publicidade</a>
+            <a href="#" class="link-rodape">Serviços empresariais</a>
+            <a href="#" class="link-rodape">Obter o aplicativo iOS</a>
+            <a href="#" class="link-rodape">Obter o aplicativo Android</a>
+          </nav>
+          <p class="copyright-rodape">LinkedIn Corporation © 2024</p>
+        </section>
+
+      </aside>
+
+    </div><!-- fim grade-perfil -->
+  </main>
+
+</body>
+</html>
