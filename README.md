@@ -11,7 +11,7 @@ Recriação do perfil do LinkedIn do professor **Carlos Eduardo Simões Pelegrin
 | Nome | RA |
 |------|----|
 |  Victor hugo de souza junqueira    | 60018315   |
-|    João otavio cardoso vilela  |    | 60020628
+|   João otavio cardoso vilela  |    | 60020628   |
 |      |    |
 |      |    |
 
